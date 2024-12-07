@@ -1,0 +1,89 @@
+/* Tutor Details Page Styles */
+.tutor-details-container {
+    padding: 20px;
+    max-width: 1200px; /* Increased width to match the StudentDetails layout */
+    margin: 0 auto; /* Center the content */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for consistency */
+  }
+  
+  .tutor-details-container h1 {
+    text-align: center;
+    font-size: 2rem; /* Same font size as in StudentDetails */
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tutor-details {
+    display: flex;
+    flex-direction: row; /* Align photo and info side-by-side */
+    justify-content: space-between;
+    gap: 20px; /* Added space between columns */
+  }
+  
+  .tutor-photo {
+    position: absolute; /* Positioned within the card */
+    top: -30px; /* Align above the card */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    width: 60px; /* Properly sized photo */
+    height: 60px; /* Matching height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border: 3px solid #fff; /* Border to separate photo from card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    background-color: #ddd; /* Fallback color */
+  }
+  
+  .tutor-info {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+  }
+  
+  .tutor-info p {
+    font-size: 1.1rem; /* Same font size as in StudentDetails */
+    line-height: 1.6;
+    margin-bottom: 10px; /* Space between details */
+  }
+  
+  .tutor-info strong {
+    color: #007bff; /* Blue color for headings */
+  }
+  
+  .tutor-info p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+  }
+  
+  @media (max-width: 768px) {
+    .tutor-details-container {
+      max-width: 90%; /* Use 90% width on smaller screens */
+    }
+  
+    .tutor-details-container h1 {
+      font-size: 1.6rem; /* Adjust font size for mobile */
+    }
+  
+    .tutor-details {
+      flex-direction: column; /* Stack photo and info on mobile */
+      align-items: center; /* Center the content */
+    }
+  
+    .tutor-photo {
+      width: 150px; /* Smaller photo on mobile */
+      height: 150px;
+    }
+  
+    .tutor-info {
+      width: 100%; /* Take full width on mobile */
+      padding: 15px;
+    }
+  
+    .tutor-info p {
+      font-size: 1rem; /* Adjust text size for mobile */
+    }
+  }
+  

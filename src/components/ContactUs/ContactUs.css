@@ -1,0 +1,82 @@
+.contact-us-section {
+  background-color: #1a1a2e; /* Dark background */
+  color: #ffffff;
+  padding: 60px 20px; /* Increased padding */
+  text-align: center; /* Center align content */
+  margin-top: 70px; /* Ensure space below the Navbar */
+}
+
+/* Title & Subtitle Styling */
+.contact-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  margin-bottom: 40px;
+}
+
+.purple {
+  color: #a020f0; /* Distinct purple color */
+}
+
+/* Form Styling */
+.contact-form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+  background-color: #333355;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* Smooth edges */
+  padding: 15px;
+  font-size: 1.1rem; /* Enhance text size */
+  margin-bottom: 20px;
+  width: 100%; /* Full width */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  background-color: #444466;
+  box-shadow: 0 0 5px #a020f0; /* Focus glow effect */
+}
+
+.contact-textarea {
+  height: 150px; /* Taller textarea */
+}
+
+/* Submit Button */
+.contact-submit-btn {
+  background-color: #a020f0;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: #8320d0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .contact-box {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-box {
+    width: 60%;
+  }
+}
